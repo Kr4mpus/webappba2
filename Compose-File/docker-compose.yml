@@ -1,0 +1,18 @@
+version: '2'
+services:
+    mongo:
+      image: mongo:2.6.12
+      container_name: my_db
+      #volumes:
+      #  - "~/tmp/meandata:/data/db"
+    app:
+      depends_on:
+        - mongo
+      image: myapp
+      container_name: my_app
+      ports:
+        - "8080:8080"
+      environment:
+        - DOCKER=mongodb://mongo:27017/mean_app
+      links:
+        - mongo:mongo

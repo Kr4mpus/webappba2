@@ -1,2 +1,5 @@
-# webappba2
-Web App für die Bachelorarbeit 2 :::::: Mörth Stefan
+Projekt wurde von Stefan Moerth mithilfe des fullstack generators erstellt
+
+Author: Mörth Stefan
+Projekt: Webappba2
+
